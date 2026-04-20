@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="freeAnimals.css" />
+    <link rel="icon" href="../Assets/images/jumping.png"/>
+    <title>SeaVerse</title>
+</head>
+<body>
+    <script src="freeAnimals.js"></script>
+    <audio src="../Assets/sounds/waves.mp3" preload="auto" autoplay="true" loop="true"></audio> 
+    <audio id="yay" src="../Assets/sounds/yay.mp3" preload="auto"></audio> 
+    <div id="gameContainer">
+        <div class="modal" id="instructionsWrapper">
+            <div id="startInstructions">
+                <img src="../Assets/images/litteronthebeach.jpg" id="image">
+                <p>Improper disposal of litter on land can be transported to our coasts by runoff and stormwater, and eventually reach our water ways. Litter and debris along the coast can make their way to the sea, where turtles and other marine creatures may consume it and be injured or killed as a result.</p>
+                <p>Drag and drop rubbish into the bin to save the trapped marine animals!</p>
+            </div>
+            <button id="startBtn">Start</button>
+        </div>
+        <div class="droparea" id="bin">
+            <h2>Drop the rubbish here to free the animals!</h2>
+            <img id="binImg" src="../Assets/images/bin.png">
+        </div>
+        <div class="gameObjects">
+            <img class="draggable" src="../Assets/images/netting.png" id="net" draggable="true"/>
+            <img class="draggable" src="../Assets/images/bottle.png" id="bottle" style="height: 100px; z-index: 5;" draggable="true"/>
+            <img class="draggable" src="../Assets/images/plasticbag.png" id="plasticbag" style="height: 100px; z-index: 5;" draggable="true"/>
+            <img src="../Assets/images/sadseal.png" style="height: 25vh;" draggable="false "/>
+            <img src="../Assets/images/turtle.png" style="height: 20vh;" draggable="false"/>
+        </div>
+    </div>
+    <div id="happy-end" style="display: none; z-index: 10;">
+        <img class="animals" src="../Assets/images/happyseal.png" />
+        <img class="animals" src="../Assets/images/happyturtle.png"/>
+        <button onclick="location.href = '../taby/animation/Outro.html'">Continue</button>
+    </div>
+</body>
+</html>

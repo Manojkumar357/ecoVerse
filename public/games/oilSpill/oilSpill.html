@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SeaVerse</title>
+        <link rel="stylesheet" href="oilSpill.css" />
+            <!-- Google Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap"
+        rel="stylesheet"
+        />
+        <link rel="icon" href="../Assets/images/jumping.png"/>
+    </head>
+    <body>
+        <audio id="bgm" src="../Assets/sounds/underwater.mp3" preload="auto" autoplay="true" loop="true"></audio>
+        <audio id="bloop" src="../Assets/sounds/bloop.mp3" preload="auto"></audio>
+        <script src="oilSpill.js"></script>
+            <div class="modal" id="instructionsWrapper">
+                <div id="startInstructions">
+                    <img src="../Assets/images/oilspill.png" id="image">
+                    <p>Human activity has resulted in the pollution of marine ecosystems worldwide. Oil spills are an example of pollution caused by humans. Hair is an environmentally friendly material that soaks up to 5 times its weight in oil! Use Rozxie's kelp hair to collect as much oil as you can! The active portion of her hair has a round circle around it.</p>
+                    <details>
+                        <summary>Credits</summary>
+                        <p>
+                          <a
+                            href="https://edition.cnn.com/2022/05/19/world/oil-spills-human-hair-matter-of-trust-spc-scn-intl-c2e/index.html#:~:text=Hair%2C%20by%20contrast%2C%20is%20an,the%20US%2C%E2%80%9D%20says%20Gautier."
+                          >
+                            Hair used to clean up oil spills
+                          </a>
+                        </p>
+                      </details>
+                </div>
+                <button id="startBtn">Start</button>
+                <div id="endGame" style="display: none">
+                    <div id="hair">
+                        <p>Click on Rozxie's hair to watch it transform!</p>
+                        <img class="hair" src="../Assets/images/hair-kelp.png" style="position: absolute; z-index: 4;" id="withkelp">
+                        <img class="hair" src="../Assets/images/originalhair.png">
+                    </div>
+                    <button id="next" onclick="location.href = '../transitionPages/sonicBlasts.html'">Next</button>
+                </div>
+            </div>
+            <div id="gameStats">
+                <div id="clock">
+                    <svg
+                      viewBox="0 0 120 120"
+                      class="chart-gauge"
+                      fill="none"
+                      stroke-width="4"
+                    >
+                      <circle class="timer-backdrop" r="40" cx="60" cy="60"></circle>
+                      <circle class="timer-gauge" r="40" cx="60" cy="60"></circle>
+                      <text y="50%" x="50%" id="gameTimer" class="timer-time">15s</text>
+                    </svg>             
+                </div>
+                <p id="score">Score: 0</p>
+            </div>
+            <canvas id="gameContainer" ></canvas>
+            <div class="seaweed" id="lightGreen" style="margin-right: -55px; z-index: -1;"></div>
+            <div class="seaweed" id="darkGreen" style="margin-left: -35px;"></div>
+            <div class="seaweed on-top" id="lightGreen"></div>
+            <div class="seaweed on-top" id="darkGreen"></div>
+    </body>
+</html>

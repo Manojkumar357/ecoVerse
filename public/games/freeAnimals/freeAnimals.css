@@ -1,0 +1,115 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-family: 'Original Surfer', cursive;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position: center;
+}
+
+#gameContainer {
+    display: block;
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgb(173, 214, 228), rgba(190, 196, 145, 0.5), rgb(120, 126, 85), rgb(200, 215, 230));
+}
+
+.droparea {
+    height: 50vh;
+    display: flex;
+    object-fit: contain;
+    flex-direction: column;
+    text-align: center;
+}
+
+#binImg {
+    height: 80%;
+    object-fit: contain;
+}
+
+.gameObjects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.draggable {
+    z-index: 1;
+}
+
+.draggable:hover {
+    cursor: move;
+}
+
+#net {
+    width: 100vw;
+    min-height: 30vh;
+    position: absolute; 
+}
+
+#happy-end { 
+    background-image: url("../Assets/images/beach-bg.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.animals {
+    object-fit: contain;
+    height: 30vh;
+    margin-bottom: 2vh;
+}
+
+.modal {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    z-index: 14;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 20px;
+    border-radius: 20px;
+    border: 4px solid white;
+    margin: 2% 25%;
+    height: 80vh;
+    flex-wrap: wrap;
+}
+
+#image {
+    max-width: 50vw;
+    min-height: 60vh;
+    max-height: 80vh;
+    object-fit: fill;
+}
+
+button {
+    background-color: black;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    font-family: 'Original Surfer', cursive;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    bottom: 5%;
+    right: 2%;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.65);
+}

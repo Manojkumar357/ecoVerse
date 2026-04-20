@@ -1,0 +1,598 @@
+{
+  "users": [
+    {
+      "id": "65f8e9cc-6e84-43fd-9196-2985aa30bff0",
+      "username": "admin123",
+      "password": "admin@1234"
+    },
+    {
+      "id": "040d7cef-2b61-4f35-8718-5f511d67d27c",
+      "username": "test_student",
+      "password": "123@123"
+    },
+    {
+      "id": "13f5ec13-3eff-4b90-a43c-e68fc0c64631",
+      "username": "test_teacher",
+      "password": "123@123"
+    }
+  ],
+  "roles": {
+    "65f8e9cc-6e84-43fd-9196-2985aa30bff0": "admin",
+    "040d7cef-2b61-4f35-8718-5f511d67d27c": "student",
+    "13f5ec13-3eff-4b90-a43c-e68fc0c64631": "teacher"
+  },
+  "schools": [
+    {
+      "id": "14acf822-a692-4d8f-8541-962f9c4b33af",
+      "name": "Green Valley High"
+    },
+    {
+      "id": "36217cd9-e7f0-411f-ac2d-ff41eef37baa",
+      "name": "Riverdale Academy"
+    }
+  ],
+  "pendingStudents": [
+    {
+      "name": "Aarav Mehta",
+      "email": "aarav.mehta@example.com",
+      "username": "aarav_m",
+      "schoolId": "14acf822-a692-4d8f-8541-962f9c4b33af",
+      "studentId": "STU1001",
+      "rollNumber": "12",
+      "className": "8",
+      "section": "A",
+      "password": "123@123",
+      "id": "cb63d85d-0a25-4712-92c1-c1f8ca778918"
+    },
+    {
+      "name": "Diya Kapoor",
+      "email": "diya.kapoor@example.com",
+      "username": "diya_k",
+      "schoolId": "36217cd9-e7f0-411f-ac2d-ff41eef37baa",
+      "studentId": "STU1002",
+      "rollNumber": "7",
+      "className": "7",
+      "section": "B",
+      "password": "123@123",
+      "id": "585b6874-7ab7-4b58-a544-94780afc87c2"
+    },
+    {
+      "name": "Rohan Gupta",
+      "email": "rohan.g@example.com",
+      "username": "rohan_g",
+      "schoolId": "14acf822-a692-4d8f-8541-962f9c4b33af",
+      "studentId": "STU1003",
+      "rollNumber": "4",
+      "className": "9",
+      "section": "C",
+      "password": "123@123",
+      "id": "c3dff2b6-5215-4921-8760-5764873e4174"
+    }
+  ],
+  "pendingTeachers": [
+    {
+      "name": "Neha Sharma",
+      "email": "neha.sharma@example.com",
+      "username": "neha_s",
+      "schoolId": "14acf822-a692-4d8f-8541-962f9c4b33af",
+      "teacherId": "TCH2001",
+      "subject": "Mathematics",
+      "password": "123@123",
+      "id": "49e225bb-8aad-4a7d-a876-d217e1cd94fb"
+    },
+    {
+      "name": "Arjun Verma",
+      "email": "arjun.verma@example.com",
+      "username": "arjun_v",
+      "schoolId": "36217cd9-e7f0-411f-ac2d-ff41eef37baa",
+      "teacherId": "TCH2002",
+      "subject": "Science",
+      "password": "123@123",
+      "id": "6f7765c7-e55c-4f63-9fe9-d88fa95e980c"
+    },
+    {
+      "name": "Sara Khan",
+      "email": "sara.khan@example.com",
+      "username": "sara_k",
+      "schoolId": "14acf822-a692-4d8f-8541-962f9c4b33af",
+      "teacherId": "TCH2003",
+      "subject": "English",
+      "password": "123@123",
+      "id": "7eede7d2-1f0f-433f-bbcb-4d45645595f5"
+    }
+  ],
+  "profiles": {
+    "65f8e9cc-6e84-43fd-9196-2985aa30bff0": {
+      "role": "admin",
+      "name": "Admin"
+    },
+    "040d7cef-2b61-4f35-8718-5f511d67d27c": {
+      "role": "student",
+      "name": "Test Student",
+      "schoolId": "14acf822-a692-4d8f-8541-962f9c4b33af"
+    },
+    "13f5ec13-3eff-4b90-a43c-e68fc0c64631": {
+      "role": "teacher",
+      "name": "Test Teacher",
+      "schoolId": "14acf822-a692-4d8f-8541-962f9c4b33af"
+    }
+  },
+  "tasks": [
+    {
+      "id": "3234e9b9-c9a3-4e51-bbb9-0e89f2aa7e3e",
+      "title": "Recycle Drive",
+      "description": "Collect and sort recyclables.",
+      "proofType": "photo",
+      "maxPoints": 8,
+      "createdByUserId": "13f5ec13-3eff-4b90-a43c-e68fc0c64631",
+      "schoolId": "14acf822-a692-4d8f-8541-962f9c4b33af",
+      "createdAt": 1776693074619,
+      "groupMode": "group",
+      "maxGroupSize": 4
+    },
+    {
+      "id": "f295e9ca-86b2-4cec-a3d3-967a004a42d2",
+      "title": "Plant a Tree",
+      "description": "Plant a sapling in your neighborhood.",
+      "proofType": "photo",
+      "maxPoints": 10,
+      "createdByUserId": "13f5ec13-3eff-4b90-a43c-e68fc0c64631",
+      "schoolId": "14acf822-a692-4d8f-8541-962f9c4b33af",
+      "createdAt": 1776693074619,
+      "groupMode": "solo"
+    }
+  ],
+  "submissions": [],
+  "groups": [],
+  "announcements": [
+    {
+      "id": "9d655afb-512a-4b23-82fd-cb7f89b05371",
+      "title": "Global Eco Week Kickoff",
+      "body": "Welcome to Eco Week! Participate in events and earn points.",
+      "createdAt": 1776693074617,
+      "createdByUserId": "65f8e9cc-6e84-43fd-9196-2985aa30bff0",
+      "schoolId": "",
+      "visibility": "global"
+    },
+    {
+      "id": "2f523096-d82c-466e-9d75-aae3a29a3d47",
+      "title": "New Global Quiz Series",
+      "body": "Try the Global Climate Action quiz now.",
+      "createdAt": 1776693074618,
+      "createdByUserId": "65f8e9cc-6e84-43fd-9196-2985aa30bff0",
+      "schoolId": "",
+      "visibility": "global"
+    },
+    {
+      "id": "316c2cf0-c103-4a5c-9f52-e990b1100093",
+      "title": "Scholarships",
+      "body": "Top eco-scorers will be considered for scholarships.",
+      "createdAt": 1776693074619,
+      "createdByUserId": "65f8e9cc-6e84-43fd-9196-2985aa30bff0",
+      "schoolId": "",
+      "visibility": "global"
+    },
+    {
+      "id": "a9b8c139-5764-4ea0-8273-4fd203a100b6",
+      "title": "School Assembly on Monday",
+      "body": "Please assemble by 8:30 AM in the auditorium.",
+      "createdAt": 1776693074617,
+      "createdByUserId": "13f5ec13-3eff-4b90-a43c-e68fc0c64631",
+      "schoolId": "14acf822-a692-4d8f-8541-962f9c4b33af",
+      "visibility": "school"
+    },
+    {
+      "id": "e496a343-870c-426f-a174-671527312e99",
+      "title": "Science Fair Registrations Open",
+      "body": "Register your teams by Friday.",
+      "createdAt": 1776693074618,
+      "createdByUserId": "13f5ec13-3eff-4b90-a43c-e68fc0c64631",
+      "schoolId": "14acf822-a692-4d8f-8541-962f9c4b33af",
+      "visibility": "school"
+    },
+    {
+      "id": "2cdf4543-c817-4990-9b18-c389882a45a0",
+      "title": "New Library Books Available",
+      "body": "Visit the library to check out the latest arrivals.",
+      "createdAt": 1776693074619,
+      "createdByUserId": "13f5ec13-3eff-4b90-a43c-e68fc0c64631",
+      "schoolId": "14acf822-a692-4d8f-8541-962f9c4b33af",
+      "visibility": "school"
+    }
+  ],
+  "assignments": [
+    {
+      "id": "d72e5477-c710-47ca-b621-8e38c55a5670",
+      "title": "Global Climate Report Summary",
+      "description": "Summarize the latest IPCC climate report in 1 page (PDF/DOC).",
+      "deadline": "2026-04-27T13:51:14.617Z",
+      "maxPoints": 10,
+      "createdByUserId": "65f8e9cc-6e84-43fd-9196-2985aa30bff0",
+      "schoolId": "",
+      "createdAt": 1776693074617,
+      "visibility": "global"
+    },
+    {
+      "id": "6c14a9b1-3eb9-46c7-815c-c9644fa69fd6",
+      "title": "Ocean Conservation Review",
+      "description": "Review 3 ocean protection initiatives and propose one idea.",
+      "deadline": "2026-05-04T13:51:14.617Z",
+      "maxPoints": 8,
+      "createdByUserId": "65f8e9cc-6e84-43fd-9196-2985aa30bff0",
+      "schoolId": "",
+      "createdAt": 1776693074618,
+      "visibility": "global"
+    },
+    {
+      "id": "e78c2b4f-f409-4e4e-b9e7-d9eda3c9a9ab",
+      "title": "Essay on Renewable Energy",
+      "description": "500-700 words. Upload as PDF/DOC.",
+      "deadline": "2026-04-25T13:51:14.617Z",
+      "maxPoints": 10,
+      "createdByUserId": "13f5ec13-3eff-4b90-a43c-e68fc0c64631",
+      "schoolId": "14acf822-a692-4d8f-8541-962f9c4b33af",
+      "createdAt": 1776693074617,
+      "visibility": "school"
+    },
+    {
+      "id": "899f44de-581d-4274-9219-20aa149f329a",
+      "title": "Waste Audit Report",
+      "description": "Audit household waste for 3 days and propose reductions.",
+      "deadline": "2026-04-29T13:51:14.617Z",
+      "maxPoints": 8,
+      "createdByUserId": "13f5ec13-3eff-4b90-a43c-e68fc0c64631",
+      "schoolId": "14acf822-a692-4d8f-8541-962f9c4b33af",
+      "createdAt": 1776693074618,
+      "visibility": "school"
+    }
+  ],
+  "assignmentSubmissions": [],
+  "quizzes": [
+    {
+      "id": "8dfa3689-0735-4364-8f6f-659ce358eccf",
+      "title": "Earth Basics (Global)",
+      "description": "General planet awareness",
+      "points": 3,
+      "createdByUserId": "65f8e9cc-6e84-43fd-9196-2985aa30bff0",
+      "schoolId": "",
+      "createdAt": 1776693074617,
+      "visibility": "global",
+      "questions": [
+        {
+          "id": "b56bb7ed-7f51-4522-bbbc-b5f1bb63c8c7",
+          "text": "Which gas is most abundant in Earth's atmosphere?",
+          "options": [
+            "Nitrogen",
+            "Oxygen",
+            "Carbon Dioxide",
+            "Argon"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "7aaa8b2c-b2d5-42d8-919f-bd6a683350a4",
+          "text": "Approximate age of Earth?",
+          "options": [
+            "4.5 billion years",
+            "450 million years",
+            "45 million years",
+            "13.8 billion years"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "4aa6b3b9-aa36-4330-9af1-5cac9d466b41",
+          "text": "What percentage of Earth's surface is covered by water?",
+          "options": [
+            "71%",
+            "50%",
+            "29%",
+            "90%"
+          ],
+          "answerIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "a2deef15-94db-46e6-a070-bfef0e2d6c5b",
+      "title": "School Science Quiz",
+      "description": "Test your science knowledge! (School only)",
+      "points": 3,
+      "createdByUserId": "13f5ec13-3eff-4b90-a43c-e68fc0c64631",
+      "schoolId": "14acf822-a692-4d8f-8541-962f9c4b33af",
+      "createdAt": 1776693074618,
+      "visibility": "school",
+      "questions": [
+        {
+          "id": "e0f39d85-1d6e-4448-bf93-33b8dfce94b8",
+          "text": "What is H2O commonly known as?",
+          "options": [
+            "Water",
+            "Oxygen",
+            "Hydrogen",
+            "Salt"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "2848b677-bf10-441b-9129-489167894c93",
+          "text": "Which planet is known as the Red Planet?",
+          "options": [
+            "Mars",
+            "Venus",
+            "Jupiter",
+            "Saturn"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "d3f5934b-25e2-4892-a5eb-15c4ef089a88",
+          "text": "What force keeps us on the ground?",
+          "options": [
+            "Gravity",
+            "Magnetism",
+            "Friction",
+            "Wind"
+          ],
+          "answerIndex": 0
+        }
+      ]
+    }
+  ],
+  "quizAttempts": [],
+  "gamePlays": [],
+  "games": [
+    {
+      "id": "seaverse-ocean-guardian",
+      "name": "SeaVerse: Ocean Guardian",
+      "category": "wildlife",
+      "description": "Protect and restore our oceans. Complete missions to save marine life, stop pollution, and learn about ocean conservation.",
+      "difficulty": "Medium",
+      "points": 100,
+      "icon": "🌊",
+      "externalUrl": "/embedded-games/index.html",
+      "image": "/api/image/360_F_819000674_C4KBdZyevZiKOZUXUqDnx7Vq1Hjskq3g.jpg",
+      "createdAt": 1776693074618,
+      "createdByUserId": "65f8e9cc-6e84-43fd-9196-2985aa30bff0"
+    },
+    {
+      "id": "eco-word-spell",
+      "name": "Eco Word Spell",
+      "category": "fun",
+      "description": "Build environmental vocabulary by spelling eco-themed words in a fast, fun challenge.",
+      "difficulty": "Easy",
+      "points": 75,
+      "icon": "🔤",
+      "externalUrl": "https://eco-word-spell.lovable.app/",
+      "image": "/api/image/1080p-nature-background-nfkrrkh7da3eonyn.jpg",
+      "createdAt": 1776693074619,
+      "createdByUserId": "65f8e9cc-6e84-43fd-9196-2985aa30bff0"
+    },
+    {
+      "id": "sorting-stories",
+      "name": "Sorting Stories",
+      "category": "recycling",
+      "description": "Sort choices in story-based scenarios to practice better waste and recycling decisions.",
+      "difficulty": "Easy",
+      "points": 80,
+      "icon": "📚",
+      "externalUrl": "https://sorting-stories-game.lovable.app/",
+      "image": "/api/image/360_F_628835191_EMMgdwXxjtd3yLBUguiz5UrxaxqByvUc.jpg",
+      "createdAt": 1776693074620,
+      "createdByUserId": "65f8e9cc-6e84-43fd-9196-2985aa30bff0"
+    },
+    {
+      "id": "eco-arrow-harmony",
+      "name": "Eco Arrow Harmony",
+      "category": "climate",
+      "description": "Follow eco-guided arrow flows to learn sustainable pathways in an interactive challenge.",
+      "difficulty": "Medium",
+      "points": 85,
+      "icon": "🎯",
+      "externalUrl": "https://eco-arrow-harmony.lovable.app/",
+      "image": "/api/image/golden-sunset-hd-backgrounds-captivatings-for-serene-scenes-photo.jpg",
+      "createdAt": 1776693074621,
+      "createdByUserId": "65f8e9cc-6e84-43fd-9196-2985aa30bff0"
+    },
+    {
+      "id": "eco-balance-grid",
+      "name": "Eco Balance Grid",
+      "category": "habits",
+      "description": "Balance environmental choices on a grid to build smart, sustainable daily habits.",
+      "difficulty": "Medium",
+      "points": 90,
+      "icon": "🧩",
+      "externalUrl": "https://eco-balance-grid.lovable.app/",
+      "image": "/api/image/beautiful-morning-view-indonesia-panorama-landscape-paddy-fields-with-beauty-color-and-sky-natural-light-photo.jpg",
+      "createdAt": 1776693074622,
+      "createdByUserId": "65f8e9cc-6e84-43fd-9196-2985aa30bff0"
+    },
+    {
+      "id": "bad-gas-hunter",
+      "name": "Bad Gas Hunter",
+      "category": "climate",
+      "description": "Hunt down harmful emissions and boost cleaner air through fast action.",
+      "difficulty": "Medium",
+      "points": 95,
+      "icon": "🛰️",
+      "externalUrl": "https://badgashunter.netlify.app/",
+      "image": "/api/image/background-pictures-nature-hd-images-1920x1200-wallpaper-preview.jpg",
+      "createdAt": 1776693074623,
+      "createdByUserId": "65f8e9cc-6e84-43fd-9196-2985aa30bff0"
+    },
+    {
+      "id": "eco-hit",
+      "name": "Eco Hit",
+      "category": "fun",
+      "description": "Quick reflex eco challenge: hit the right sustainability targets and rack up points.",
+      "difficulty": "Easy",
+      "points": 85,
+      "icon": "🎯",
+      "externalUrl": "https://eco-hit.netlify.app/",
+      "image": "/api/image/nature-319.jpg",
+      "createdAt": 1776693074624,
+      "createdByUserId": "65f8e9cc-6e84-43fd-9196-2985aa30bff0"
+    },
+    {
+      "id": "eco-shoot",
+      "name": "Eco Shoot",
+      "category": "wildlife",
+      "description": "Action-packed shooter experience with an environmental mission focus.",
+      "difficulty": "Hard",
+      "points": 120,
+      "icon": "🚀",
+      "externalUrl": "https://ecoshoot.netlify.app/",
+      "image": "/api/image/b1573252592009209d45a186360dea8c.jpg",
+      "createdAt": 1776693074625,
+      "createdByUserId": "65f8e9cc-6e84-43fd-9196-2985aa30bff0"
+    },
+    {
+      "id": "matching-pairs-date",
+      "name": "Matching Pairs Date",
+      "category": "fun",
+      "description": "A fast memory and matching challenge with a playful date-night style twist.",
+      "difficulty": "Easy",
+      "points": 75,
+      "icon": "💞",
+      "externalUrl": "https://matchingpairsdate.netlify.app/",
+      "image": "/api/image/Bhpd8.jpg",
+      "createdAt": 1776693074626,
+      "createdByUserId": "65f8e9cc-6e84-43fd-9196-2985aa30bff0"
+    },
+    {
+      "id": "tsunami-expedition",
+      "name": "Tsunami Expedition",
+      "category": "climate",
+      "description": "Explore wave and disaster awareness through a challenge built around environmental resilience.",
+      "difficulty": "Medium",
+      "points": 95,
+      "icon": "🌊",
+      "externalUrl": "https://tsunamiexp.netlify.app/",
+      "image": "/api/image/pngtree-abstract-cloudy-background-beautiful-natural-streaks-of-sky-and-clouds-red-image_15684333.jpg",
+      "createdAt": 1776693074627,
+      "createdByUserId": "65f8e9cc-6e84-43fd-9196-2985aa30bff0"
+    },
+    {
+      "id": "mineral-expedition",
+      "name": "Mineral Expedition",
+      "category": "wildlife",
+      "description": "Discover mineral-themed exploration in a guided adventure focused on terrain and earth science.",
+      "difficulty": "Medium",
+      "points": 90,
+      "icon": "⛏️",
+      "externalUrl": "https://mineralexp.netlify.app/",
+      "image": "/api/image/pngtree-cb-background-hd-2022-download-picsart-and-snapseed-photo-editing-picture-image_15546523.jpg",
+      "createdAt": 1776693074628,
+      "createdByUserId": "65f8e9cc-6e84-43fd-9196-2985aa30bff0"
+    },
+    {
+      "id": "environment-word-explorer",
+      "name": "Environment Word Explorer",
+      "category": "fun",
+      "description": "Explore and master environmental words in a fun, educational game session.",
+      "difficulty": "Easy",
+      "points": 80,
+      "icon": "📖",
+      "externalUrl": "https://evironmentwordexplorer.netlify.app/",
+      "image": "/api/image/stunning-high-resolution-nature-and-landscape-backgrounds-breathtaking-scenery-in-hd-photo.jpg",
+      "createdAt": 1776693074629,
+      "createdByUserId": "65f8e9cc-6e84-43fd-9196-2985aa30bff0"
+    },
+    {
+      "id": "acquamind",
+      "name": "AcquaMind",
+      "category": "habits",
+      "description": "Interactive water-awareness challenge focused on smarter use, conservation habits, and environmental impact.",
+      "difficulty": "Medium",
+      "points": 95,
+      "icon": "💧",
+      "externalUrl": "https://acquamind.netlify.app/",
+      "image": "/api/image/stunning-high-resolution-nature-and-landscape-backgrounds-breathtaking-scenery-in-hd-photo.jpg",
+      "createdAt": 1776693074630,
+      "createdByUserId": "65f8e9cc-6e84-43fd-9196-2985aa30bff0"
+    },
+    {
+      "id": "waste-segregation",
+      "name": "Waste Segregation",
+      "category": "recycling",
+      "description": "Drag items into the correct bins.",
+      "difficulty": "Easy",
+      "points": 5,
+      "icon": "♻️",
+      "externalUrl": "/games/",
+      "createdAt": 1776693074631,
+      "createdByUserId": "65f8e9cc-6e84-43fd-9196-2985aa30bff0"
+    },
+    {
+      "id": "eco-home-challenge",
+      "name": "Eco-Home Challenge",
+      "category": "habits",
+      "description": "Fix bad habits in a room.",
+      "difficulty": "Easy",
+      "points": 8,
+      "icon": "🏠",
+      "externalUrl": "/games/",
+      "createdAt": 1776693074632,
+      "createdByUserId": "65f8e9cc-6e84-43fd-9196-2985aa30bff0"
+    },
+    {
+      "id": "recycling-factory-puzzle",
+      "name": "Recycling Factory Puzzle",
+      "category": "recycling",
+      "description": "Reorder the factory line correctly.",
+      "difficulty": "Medium",
+      "points": 20,
+      "icon": "🏭",
+      "externalUrl": "/games/",
+      "createdAt": 1776693074633,
+      "createdByUserId": "65f8e9cc-6e84-43fd-9196-2985aa30bff0"
+    },
+    {
+      "id": "ocean-cleanup",
+      "name": "Ocean Cleanup",
+      "category": "recycling",
+      "description": "Collect plastic, avoid fish.",
+      "difficulty": "Easy",
+      "points": 10,
+      "icon": "🚤",
+      "externalUrl": "/games/",
+      "createdAt": 1776693074634,
+      "createdByUserId": "65f8e9cc-6e84-43fd-9196-2985aa30bff0"
+    }
+  ],
+  "lessonCompletions": [],
+  "learningModules": [],
+  "notifications": [
+    {
+      "id": "1f77c86e-3777-4753-a6f2-1297d3eecd67",
+      "userId": "040d7cef-2b61-4f35-8718-5f511d67d27c",
+      "message": "New global announcements available",
+      "type": "announcement",
+      "createdAt": 1776693074617
+    },
+    {
+      "id": "7614d5d1-c995-4678-9455-9ad00895f81c",
+      "userId": "040d7cef-2b61-4f35-8718-5f511d67d27c",
+      "message": "New global assignments available",
+      "type": "task",
+      "createdAt": 1776693074618
+    },
+    {
+      "id": "5809f3c8-b66a-4a7d-8b90-700f196eb4b6",
+      "userId": "040d7cef-2b61-4f35-8718-5f511d67d27c",
+      "message": "New school announcements available",
+      "type": "announcement",
+      "createdAt": 1776693074618
+    },
+    {
+      "id": "43a248d5-b367-490f-b789-1a8f814c67dd",
+      "userId": "040d7cef-2b61-4f35-8718-5f511d67d27c",
+      "message": "New school assignments available",
+      "type": "task",
+      "createdAt": 1776693074618
+    }
+  ],
+  "videos": [],
+  "userVideoProgress": [],
+  "userCredits": []
+}

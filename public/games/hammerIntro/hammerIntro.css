@@ -1,0 +1,21 @@
+body {
+    height: 100vh;
+    background-image: url('../Assets/images/logging.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Original Surfer', cursive;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    flex-direction: column;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Original Surfer', cursive;
+}

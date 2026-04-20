@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;700;800&display=swap"
+        rel="stylesheet" />
+    <!-- Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+        integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./Assets/images/jumping.png" />
+    <title>SeaVerse</title>
+</head>
+
+<body>
+    <script src="start.js"></script>
+    <audio id="bgm" src="./Assets/sounds/waves.mp3" preload="auto" loop="true"></audio>
+    <audio id="scream" src="Assets/sounds/scream.mp3" preload="auto"></audio>
+
+    <div class="ocean-glow glow-left" aria-hidden="true"></div>
+    <div class="ocean-glow glow-right" aria-hidden="true"></div>
+
+    <header class="page-header">
+        <h1><i class="fa-solid fa-fish"></i> SeaVerse <i class="fa-solid fa-fish"></i></h1>
+        <p>From chaos to guardian: help Rozxie save the ocean.</p>
+    </header>
+
+    <main class="experience-shell">
+        <section class="scene scene-intro" id="introScene" aria-live="polite">
+            <div id="rozxie" class="character-stack">
+                <img class="bottom" src="Assets/images/pose-close-eyes.png" alt="Rozxie waiting by the beach" />
+                <img class="top" src="Assets/images/pose.png" alt="Rozxie opening her eyes" />
+            </div>
+            <div class="caption intro-caption">
+                <p>Step into the tide. Every action shapes the sea.</p>
+            </div>
+        </section>
+
+        <section class="story scene" id="start" style="display: none">
+            <div class="character-stack">
+                <img class="bottom" src="Assets/images/pose-close-eyes.png" alt="Rozxie on the shoreline" />
+                <img class="top" src="Assets/images/pose.png" alt="Rozxie smiling for social media" />
+            </div>
+            <div class="caption">
+                <p id="text">This is Rozxie. She LOVES going to the beach. She is an instagram influencer and her
+                    handle is @official_rozxie_lakynn.</p>
+            </div>
+        </section>
+
+        <section class="story scene" id="litter" style="display: none">
+            <img id="image" src="Assets/images/litter.png" alt="Littered beach scene" />
+            <div class="caption">
+                <p id="text">The bad thing is, Rozxie is a litter bug...</p>
+            </div>
+        </section>
+
+        <section class="story scene" id="coral" style="display: none">
+            <div class="character-stack">
+                <img class="bottom" src="Assets/images/selfie-text.png" alt="Text overlay selfie" />
+                <img class="top" src="Assets/images/selfie.png" alt="Rozxie taking a selfie" />
+            </div>
+            <div class="caption">
+                <p id="text">And a massive narcissist...</p>
+            </div>
+        </section>
+
+        <section class="story scene" id="marine" style="display: none">
+            <div id="animate" class="character-stack">
+                <img class="bottom" src="Assets/images/turtle-hurt.png" alt="Injured turtle" />
+                <img class="top" src="Assets/images/turtle-cry.png" alt="Crying turtle" />
+            </div>
+            <div class="caption">
+                <p id="text">As a result of her actions, she has hurt many animals. :(</p>
+            </div>
+        </section>
+
+        <section class="story scene" id="kelpie" style="display: none">
+            <div id="animate" class="character-stack">
+                <img class="bottom" src="Assets/images/kelpie.png" alt="Guardian kelpie appears" />
+                <img class="top" src="Assets/images/angrykelpie.png" alt="Angry kelpie" />
+            </div>
+            <div class="caption">
+                <p id="text">One day, the guardian Kelpie decided enough was enough...</p>
+            </div>
+        </section>
+
+        <section class="story scene" id="curse" style="display: none">
+            <div class="character-stack">
+                <img class="bottom" src="Assets/images/cursed-green.png" alt="Cursed glow effect" />
+                <img class="top" src="Assets/images/cursed.png" alt="Rozxie cursed" />
+            </div>
+            <div class="caption">
+                <p id="text">And cursed Rozxie!!</p>
+            </div>
+        </section>
+
+        <section class="story scene" id="breakcurse" style="display: none">
+            <img id="image" src="Assets/images/break-curse.png" alt="Break the curse quest" />
+            <div class="caption">
+                <p id="text">"To break the curse, you need to help sea creatures," said the guardian Kelpie.</p>
+            </div>
+        </section>
+    </main>
+
+    <div class="hud" role="region" aria-label="Story controls">
+        <div class="progress-panel">
+            <div class="progress-meta">
+                <span class="status">Story Progress</span>
+                <span id="stepLabel">Scene 0 / 7</span>
+            </div>
+            <div class="progress-track" aria-hidden="true">
+                <div id="progressFill" class="progress-fill"></div>
+            </div>
+        </div>
+        <div class="actions">
+            <button id="next" aria-label="Go to next scene">Next Scene</button>
+            <button id="oilSpill" onclick="location.href = 'oilSpill/oilSpill.html'" style="display: none"
+                aria-label="Continue to oil spill mission">Start Mission</button>
+        </div>
+    </div>
+</body>
+
+</html>

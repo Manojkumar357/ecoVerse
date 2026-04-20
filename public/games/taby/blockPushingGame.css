@@ -1,0 +1,23 @@
+#message {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Original Surfer', cursive;
+  text-align: center;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body {
+  /* background-color: #03a6e1; */
+  background: linear-gradient(45deg, rgb(81, 81, 200), rgb(0, 255, 204));;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}

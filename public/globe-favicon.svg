@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Globe favicon">
+  <defs>
+    <radialGradient id="ocean" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </radialGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#0b1220"/>
+  <circle cx="32" cy="32" r="20" fill="url(#ocean)"/>
+  <path d="M21 23c3 2 5 1 7 0 2-1 4-1 6 1 1 1 3 2 5 2v7c-2 0-3 1-4 2-2 2-4 3-7 2-2-1-4 0-6 2-2 1-3 2-5 2-1-3-2-6-2-9 0-3 1-6 2-9 1 0 2 0 4 2z" fill="#86efac"/>
+  <ellipse cx="32" cy="32" rx="14" ry="20" fill="none" stroke="#e0f2fe" stroke-opacity="0.6" stroke-width="1.5"/>
+  <path d="M12 32h40" stroke="#e0f2fe" stroke-opacity="0.6" stroke-width="1.5"/>
+  <path d="M16 24h32M16 40h32" stroke="#e0f2fe" stroke-opacity="0.35" stroke-width="1"/>
+</svg>

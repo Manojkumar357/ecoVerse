@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap"
+  rel="stylesheet"
+  />
+  <link rel="stylesheet" href="hammer.css">
+  <link rel="icon" href="../Assets/images/jumping.png"/>
+  <title>SeaVerse</title>
+</head>
+
+  <body  >
+      <div
+        style="
+          color: white;
+          font-size: 30px;
+          background-color: black;
+          padding: 10px;
+          width: 840px;
+        "
+      >
+        Click on all the loggers to stop them from destroying the mangroves!
+      </div>
+
+      <h2
+        style="
+          background-color: skyblue;
+          width: 150px;
+          margin-bottom: 0px;
+          padding: 5px;
+        "
+      >
+        Your score:
+      </h2>
+      <h2
+        id="score"
+        style="
+          background-color: skyblue;
+          width: 150px;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          padding: 5px;
+        "
+      >
+        0
+      </h2>
+
+      <h2
+        style="
+          background-color: skyblue;
+          width: 150px;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          padding: 5px;
+        "
+      >
+        Time left:
+      </h2>
+      <h2
+        id="time-left"
+        style="
+          background-color: skyblue;
+          width: 150px;
+          margin-top: 0px;
+          padding: 5px;
+        "
+      >
+        30
+      </h2>
+
+    <div class="grid">
+      <div class="square" id="1"></div>
+      <div class="square" id="2"></div>
+      <div class="square" id="3"></div>
+      <div class="square" id="4"></div>
+      <div class="square" id="5"></div>
+      <div class="square" id="6"></div>
+      <div class="square" id="7"></div>
+      <div class="square" id="8"></div>
+      <div class="square" id="9"></div>
+      <div class="square" id="10"></div>
+      <div class="square" id="11"></div>
+      <div class="square" id="12"></div>
+      <div class="square" id="13"></div>
+      <div class="square" id="14"></div>
+      <div class="square" id="15"></div>
+      <div class="square" id="16"></div>
+      <div class="square" id="17"></div>
+      <div class="square" id="18"></div>
+      <div class="square" id="19"></div>
+      <div class="square" id="20"></div>
+      <div class="square" id="21"></div>
+      <div class="square" id="22"></div>
+      <div class="square" id="23"></div>
+      <div class="square" id="24"></div>
+      <div class="square" id="25"></div>
+      <div class="square" id="26"></div>
+      <div class="square" id="27"></div>
+      <div class="square" id="28"></div>
+      <div class="square" id="29"></div>
+      <div class="square" id="30"></div>
+      <div class="square" id="31"></div>
+      <div class="square" id="32"></div>
+      <!-- <div class="square" id="33"></div>
+      <div class="square" id="34"></div>
+      <div class="square" id="35"></div> -->
+
+      <audio
+        src="sounds/chainsaw.mp3"
+        id="chainsaw"
+        preload="auto"
+        autoplay="true"
+        loop="true"
+      ></audio>
+
+      <!-- <button
+        type="button"
+        class="btn btn-primary"
+        onclick="next()"
+        style="
+          left: 1700px;
+          top: 550px;
+          position: absolute;
+          background-color: rgb(226, 199, 159);
+          font-size: 30px;
+          height: 100px;
+          width: 200px;
+        "
+      >
+        CONTINUE
+      </button> -->
+    </div>
+
+    <script src="hammer.js"></script>
+  </body>
+</html>

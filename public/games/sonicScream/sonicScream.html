@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sonic Scream</title>
+    <link rel="stylesheet" href="./sonicScream.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../Assets/images/jumping.png"/>
+    <title>SeaVerse</title>
+  </head>
+  <body>
+    <div id="canvasContainer" class="center">
+      <h1 class="titleTxt">
+        Rozxie uses her sonic scream to scare off oil ships and stop them from blasting seismic air guns into the sea!
+      </h1>
+
+      <div class="stats">
+        <p>❤ Health: <span id="health">100</span></p>
+        <p>😈 Enemy Health: <span id="enemyHealth">100</span></p>
+         
+      </div>
+
+      <canvas id="fishCanvas" width="200" height="100"></canvas>
+    </div>
+
+    <script src="../matter.js"></script>
+    <script src="./sonicScream.js"></script>
+  </body>
+</html>

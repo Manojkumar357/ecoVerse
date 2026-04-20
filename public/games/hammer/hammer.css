@@ -1,0 +1,62 @@
+body {
+    font-family: 'Original Surfer', cursive;
+}
+
+.grid {
+    display: flex;
+    max-width: 1650px;
+    /* width: 1620px; */
+    height: 809px;
+    flex-wrap: wrap;
+    /* border: solid black 1px; */
+    cursor: url(images/crabClaw.png), default;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    /* border: solid white 1px; */
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.mole {
+    background-image: url("images/logger.png");
+    max-width: 200px;
+    max-height: 200px;
+    background-size: cover;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+
+body {
+    background-image: url('images/mangrove.jpg');
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    
+    font-family: 'Original Surfer', cursive;
+    text-align: center;
+}
+

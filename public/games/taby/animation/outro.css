@@ -1,0 +1,126 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-family: 'Original Surfer', cursive;
+    margin: 0;
+    padding: 0;
+    background-image: url("../../Assets/images/beach-bg.png");
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position: center;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+#rozxie div, #image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#rozxie .bottom, .bottom{
+    opacity: 1;
+    min-height: 60vh;
+    max-height: 80vh;
+    object-fit: contain;
+    position: absolute;
+}
+
+#rozxie .top, .top{
+    -webkit-animation: anim 11s infinite alternate;
+    animation: anim 1s infinite alternate;
+    min-height: 60vh;
+    max-height: 80vh;
+    object-fit: contain;
+    position: absolute;
+}
+
+@-webkit-keyframes anim {
+    0% {
+        opacity: 0;
+    }
+    36.36% {
+        opacity: 0;
+    }
+    63.63% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes anim {
+    0% {
+        opacity: 0;
+    }
+    36.36% {
+        opacity: 0;
+    }
+    63.63% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.story {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: black;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    font-family: 'Original Surfer', cursive;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    bottom: 5%;
+    right: 2%;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.caption {
+    position: absolute;
+    z-index: 10;
+    bottom: 5%;
+    padding: 1%;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+#animate {
+    padding: 5%;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+}
+
+#image {
+    height: 70%;
+    object-fit: contain;
+}
