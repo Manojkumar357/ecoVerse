@@ -88,7 +88,7 @@ app.use((req, res, next) => {
 const port = parseInt(process.env.PORT || '5000', 10);
 
 // Set HOST=0.0.0.0 only when you explicitly want external access.
-const host = process.env.HOST || '127.0.0.1';
+const host ='0.0.0.0';
 
 server.listen(
   {
